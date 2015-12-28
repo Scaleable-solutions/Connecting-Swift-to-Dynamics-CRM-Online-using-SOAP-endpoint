@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBF4934E1C30FC3800A8214C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4934D1C30FC3800A8214C /* AppDelegate.swift */; };
+		BBF493501C30FC3800A8214C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4934F1C30FC3800A8214C /* ViewController.swift */; };
+		BBF493531C30FC3800A8214C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF493511C30FC3800A8214C /* Main.storyboard */; };
+		BBF493551C30FC3800A8214C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF493541C30FC3800A8214C /* Assets.xcassets */; };
+		BBF493581C30FC3800A8214C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF493561C30FC3800A8214C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBF4934A1C30FC3800A8214C /* crm-authentication-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crm-authentication-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF4934D1C30FC3800A8214C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBF4934F1C30FC3800A8214C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBF493521C30FC3800A8214C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBF493541C30FC3800A8214C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBF493571C30FC3800A8214C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBF493591C30FC3800A8214C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBF493471C30FC3800A8214C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBF493411C30FC3800A8214C = {
+			isa = PBXGroup;
+			children = (
+				BBF4934C1C30FC3800A8214C /* crm-authentication-sample */,
+				BBF4934B1C30FC3800A8214C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBF4934B1C30FC3800A8214C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBF4934A1C30FC3800A8214C /* crm-authentication-sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF4934C1C30FC3800A8214C /* crm-authentication-sample */ = {
+			isa = PBXGroup;
+			children = (
+				BBF4934D1C30FC3800A8214C /* AppDelegate.swift */,
+				BBF4934F1C30FC3800A8214C /* ViewController.swift */,
+				BBF493511C30FC3800A8214C /* Main.storyboard */,
+				BBF493541C30FC3800A8214C /* Assets.xcassets */,
+				BBF493561C30FC3800A8214C /* LaunchScreen.storyboard */,
+				BBF493591C30FC3800A8214C /* Info.plist */,
+			);
+			path = "crm-authentication-sample";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBF493491C30FC3800A8214C /* crm-authentication-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF4935C1C30FC3800A8214C /* Build configuration list for PBXNativeTarget "crm-authentication-sample" */;
+			buildPhases = (
+				BBF493461C30FC3800A8214C /* Sources */,
+				BBF493471C30FC3800A8214C /* Frameworks */,
+				BBF493481C30FC3800A8214C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "crm-authentication-sample";
+			productName = "crm-authentication-sample";
+			productReference = BBF4934A1C30FC3800A8214C /* crm-authentication-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBF493421C30FC3800A8214C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Scaleable Solutions";
+				TargetAttributes = {
+					BBF493491C30FC3800A8214C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QC83UK25PM;
+					};
+				};
+			};
+			buildConfigurationList = BBF493451C30FC3800A8214C /* Build configuration list for PBXProject "crm-authentication-sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBF493411C30FC3800A8214C;
+			productRefGroup = BBF4934B1C30FC3800A8214C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBF493491C30FC3800A8214C /* crm-authentication-sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBF493481C30FC3800A8214C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF493581C30FC3800A8214C /* LaunchScreen.storyboard in Resources */,
+				BBF493551C30FC3800A8214C /* Assets.xcassets in Resources */,
+				BBF493531C30FC3800A8214C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBF493461C30FC3800A8214C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF493501C30FC3800A8214C /* ViewController.swift in Sources */,
+				BBF4934E1C30FC3800A8214C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBF493511C30FC3800A8214C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBF493521C30FC3800A8214C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBF493561C30FC3800A8214C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBF493571C30FC3800A8214C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBF4935A1C30FC3800A8214C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBF4935B1C30FC3800A8214C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBF4935D1C30FC3800A8214C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "crm-authentication-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scaleablesolutions.crm-authentication-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBF4935E1C30FC3800A8214C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "crm-authentication-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scaleablesolutions.crm-authentication-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBF493451C30FC3800A8214C /* Build configuration list for PBXProject "crm-authentication-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF4935A1C30FC3800A8214C /* Debug */,
+				BBF4935B1C30FC3800A8214C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF4935C1C30FC3800A8214C /* Build configuration list for PBXNativeTarget "crm-authentication-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF4935D1C30FC3800A8214C /* Debug */,
+				BBF4935E1C30FC3800A8214C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBF493421C30FC3800A8214C /* Project object */;
+}
