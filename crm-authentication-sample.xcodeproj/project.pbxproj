@@ -12,6 +12,14 @@
 		BBF493531C30FC3800A8214C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF493511C30FC3800A8214C /* Main.storyboard */; };
 		BBF493551C30FC3800A8214C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF493541C30FC3800A8214C /* Assets.xcassets */; };
 		BBF493581C30FC3800A8214C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF493561C30FC3800A8214C /* LaunchScreen.storyboard */; };
+		BBF493661C3104E400A8214C /* CRMAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF493651C3104E400A8214C /* CRMAuth.swift */; };
+		BBF493681C31050D00A8214C /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF493671C31050D00A8214C /* ServiceHandler.swift */; };
+		BBF4936A1C31052400A8214C /* AuthXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF493691C31052400A8214C /* AuthXMLParser.swift */; };
+		BBF4936C1C31053200A8214C /* AuthHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4936B1C31053200A8214C /* AuthHolder.swift */; };
+		BBF4936E1C314D1B00A8214C /* ExecuteSOAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4936D1C314D1B00A8214C /* ExecuteSOAP.swift */; };
+		BBF493701C314F1500A8214C /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4936F1C314F1500A8214C /* NameViewController.swift */; };
+		BBF493721C3152AA00A8214C /* CRMSOAPBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF493711C3152AA00A8214C /* CRMSOAPBodies.swift */; };
+		BBF493741C31584100A8214C /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF493731C31584100A8214C /* SWXMLHash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		BBF493541C30FC3800A8214C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBF493571C30FC3800A8214C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBF493591C30FC3800A8214C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF493651C3104E400A8214C /* CRMAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRMAuth.swift; sourceTree = "<group>"; };
+		BBF493671C31050D00A8214C /* ServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
+		BBF493691C31052400A8214C /* AuthXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthXMLParser.swift; sourceTree = "<group>"; };
+		BBF4936B1C31053200A8214C /* AuthHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthHolder.swift; sourceTree = "<group>"; };
+		BBF4936D1C314D1B00A8214C /* ExecuteSOAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExecuteSOAP.swift; path = ../ExecuteSOAP.swift; sourceTree = "<group>"; };
+		BBF4936F1C314F1500A8214C /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		BBF493711C3152AA00A8214C /* CRMSOAPBodies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRMSOAPBodies.swift; sourceTree = "<group>"; };
+		BBF493731C31584100A8214C /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +71,29 @@
 			isa = PBXGroup;
 			children = (
 				BBF4934D1C30FC3800A8214C /* AppDelegate.swift */,
-				BBF4934F1C30FC3800A8214C /* ViewController.swift */,
-				BBF493511C30FC3800A8214C /* Main.storyboard */,
 				BBF493541C30FC3800A8214C /* Assets.xcassets */,
-				BBF493561C30FC3800A8214C /* LaunchScreen.storyboard */,
+				BBF493621C31047900A8214C /* CRM Authentication */,
+				BBF493711C3152AA00A8214C /* CRMSOAPBodies.swift */,
 				BBF493591C30FC3800A8214C /* Info.plist */,
+				BBF493561C30FC3800A8214C /* LaunchScreen.storyboard */,
+				BBF493511C30FC3800A8214C /* Main.storyboard */,
+				BBF4936F1C314F1500A8214C /* NameViewController.swift */,
+				BBF493731C31584100A8214C /* SWXMLHash.swift */,
+				BBF4934F1C30FC3800A8214C /* ViewController.swift */,
 			);
 			path = "crm-authentication-sample";
+			sourceTree = "<group>";
+		};
+		BBF493621C31047900A8214C /* CRM Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BBF4936B1C31053200A8214C /* AuthHolder.swift */,
+				BBF493691C31052400A8214C /* AuthXMLParser.swift */,
+				BBF493651C3104E400A8214C /* CRMAuth.swift */,
+				BBF4936D1C314D1B00A8214C /* ExecuteSOAP.swift */,
+				BBF493671C31050D00A8214C /* ServiceHandler.swift */,
+			);
+			path = "CRM Authentication";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF4936A1C31052400A8214C /* AuthXMLParser.swift in Sources */,
+				BBF4936E1C314D1B00A8214C /* ExecuteSOAP.swift in Sources */,
+				BBF493721C3152AA00A8214C /* CRMSOAPBodies.swift in Sources */,
+				BBF493741C31584100A8214C /* SWXMLHash.swift in Sources */,
 				BBF493501C30FC3800A8214C /* ViewController.swift in Sources */,
+				BBF493701C314F1500A8214C /* NameViewController.swift in Sources */,
 				BBF4934E1C30FC3800A8214C /* AppDelegate.swift in Sources */,
+				BBF493681C31050D00A8214C /* ServiceHandler.swift in Sources */,
+				BBF493661C3104E400A8214C /* CRMAuth.swift in Sources */,
+				BBF4936C1C31053200A8214C /* AuthHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +327,7 @@
 				BBF4935E1C30FC3800A8214C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
