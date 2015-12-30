@@ -1,7 +1,7 @@
 # SOAP-Authentication-in-Dynamics-CRM-using-Swift
 
 
-Non .Net clients can access Microsoft Dynamics CRM business data using SOAP end point or Web API. In this tutorial we will see how to perform SOAP authentication in Microsoft Dynamics CRM from Swift. We have made a sample application which sends WhoAmIRequest and CRM responds back with the logged in username.
+Non .Net clients can access Microsoft Dynamics CRM business data using SOAP end point or Web API. In this tutorial we will learn how to perform SOAP authentication to Microsoft Dynamics CRM from Swift. We have made a sample application which sends WhoAmIRequest and CRM responds back with the logged in name.
 
 ---------
 
@@ -31,7 +31,7 @@ var expire:String = ""
 
 ##CRMAuth
 
-This is the main class which does all the authentication process. We pass the domain URL, username and password and it return four values inside AuthHolder class object.
+This is the main class which does all the authentication process. We are passing the domain URL, username and password and it return four values after making a network call and parsing.
 
 Those 4 values are:
 
@@ -44,7 +44,7 @@ Those 4 values are:
 
 ##ExecuteSOAP
 
-This class create SOAP Request and execute it with the help of ServiceHandler class.
+This class create and execute SOAP Request with the help of **tokens** and **keyidentifier** returned by **CRMAuth** class.
 
 ##CRMSOAPBodies
 
