@@ -1,20 +1,62 @@
-# crm-authentication-using-swift
+# SOAP-Authentication-in-Dynamics-CRM-using-Swift
 
-Microsoft Dynamics CRM is a very popular CRM Technology. But is has limitations. Direct connections can only be made through .Net technology.
-There are some libraries which helps connect to Dynamics CRM through none .Net technologies but all uses ADAL (Active Directory Authentication Library) in which an application should be registered in Azure which can be very difficult.
-In Dynamics CRM, there is a SOAP web service endpoint which can also be used to access CRM anywhere. 
+Apps not built on the .NET Framework, can access Microsoft Dynamics CRM business data through the SOAP and OData endpoints of the organization web service. In this tutorial we will see how to perform SOAP authentication in Microsoft Dynamics CRM using Swift. We have made a sample application which sends WhoAmIRequest and CRM responds back with the logged in username.
+---------
 
-# How to use
+#Working
 
-Copy the CRM Authentication folder into a project in XCODE to get started.
+##Service Handler
 
-Extend the class or view controller where the result is required with CRMAuthDelegate and add the required methods.
+First of all we have made a custom Service Handler class which handles the network requests. It requires NSMutableURLRequest object.
 
-Callback will provide AuthHolder which is consist of four values which are:
+##AuthXMLParser
 
+This is the specialized XML parser for CRM authentication response. It parses the response returned from CRM authentication.
+
+##AuthHolder
+
+This is simply a container class which holds the return values for authentication.
+
+```swift
+class AuthHolder : NSObject {
+
+var keyIdentifier:String = ""
+var token0:String = ""
+var token1:String = ""
+var expire:String = ""
+}
+```
+
+##CRMAuth
+
+This is the main class which does all the authentication process. We pass the domain URL, username and password and it return four values inside AuthHolder class object.
+
+Those 4 values are:
 1.	Expire time
 2.	Key identifier
 3.	Token0
 4.	Token1
 
-Provide these values to ExecuteSOAP class along with SOAP Body (sample can be found in CRMSOAPBodies) and organization URL. Also extend the desired class with ExecuteSOAPDelegate to get result which will be in pure string and that string will be in XML format.
+1st one is to determine when to expire the authentication token will expire and 2nd, 3rd and 4th is being used for making SOAP Header
+
+##ExecuteSOAP
+
+This class create SOAP Request and execute it with the help of ServiceHandler class.
+
+##CRMSOAPBodies
+
+This class holds the SOAP bodies which is used in SOAP request inside SOAP Envelope as it contains the query that do some action(Create, Update, Delete and Retrieve etc.).
+
+**Note: SOAP Bodies created by SOAP Logger will not work in Swift.**
+
+---------
+
+#Conclusion
+
+The given sample is great starter app to perform authentication in iOS apps. It gives a good overview of how you can make connection with CRM in external apps not developed in .NET. You can freely use this sample in your apps for authentication purposes.
+
+
+
+
+
+
