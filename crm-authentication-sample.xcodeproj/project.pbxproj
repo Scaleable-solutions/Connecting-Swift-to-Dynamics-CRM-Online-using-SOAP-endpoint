@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB8BB7891C328074004A2099 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB8BB7881C328074004A2099 /* README.md */; };
 		BBF033CD1C3250900063BC02 /* ExecuteSOAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF033CC1C3250900063BC02 /* ExecuteSOAP.swift */; };
 		BBF4934E1C30FC3800A8214C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4934D1C30FC3800A8214C /* AppDelegate.swift */; };
 		BBF493501C30FC3800A8214C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4934F1C30FC3800A8214C /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB8BB7881C328074004A2099 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BBF033CC1C3250900063BC02 /* ExecuteSOAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecuteSOAP.swift; sourceTree = "<group>"; };
 		BBF4934A1C30FC3800A8214C /* crm-authentication-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crm-authentication-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF4934D1C30FC3800A8214C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				BBF4936F1C314F1500A8214C /* NameViewController.swift */,
 				BBF493731C31584100A8214C /* SWXMLHash.swift */,
 				BBF4934F1C30FC3800A8214C /* ViewController.swift */,
+				BB8BB7881C328074004A2099 /* README.md */,
 			);
 			path = "crm-authentication-sample";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				BBF4934E1C30FC3800A8214C /* AppDelegate.swift in Sources */,
 				BBF493681C31050D00A8214C /* ServiceHandler.swift in Sources */,
 				BBF493661C3104E400A8214C /* CRMAuth.swift in Sources */,
+				BB8BB7891C328074004A2099 /* README.md in Sources */,
 				BBF4936C1C31053200A8214C /* AuthHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

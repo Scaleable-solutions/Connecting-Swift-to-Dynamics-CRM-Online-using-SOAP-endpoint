@@ -23,6 +23,9 @@ class ViewController: UIViewController,ExecuteSOAPDelegate,CRMAuthDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        domainTextField.autocorrectionType = .No
+        usernameTextField.autocorrectionType = .No
+        passwordTextField.autocorrectionType = .No
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,10 +41,58 @@ class ViewController: UIViewController,ExecuteSOAPDelegate,CRMAuthDelegate {
     }
     
     @IBAction func submitButtonAction(sender: UIButton) {
+        let domain = domainTextField.text!
+        if(domain.isEmpty){
+            let alert = UIAlertController(title: "Error", message: "Please provide Organization url", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default){action in
+                switch action.style{
+                case .Default:
+                    self.domainTextField.becomeFirstResponder()
+                default:
+                    break
+                }
+                })
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+        if(!matches(domain, pattern: "https://[a-z]*.crm[2-9]?.dynamics.com")){
+            let alert = UIAlertController(title: "Error", message: "Please enter correct domain\nhttps://<organization name>.crm.dynamics.com", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+        let username = usernameTextField.text!
+        if(username.isEmpty){
+            let alert = UIAlertController(title: "Error", message: "Please provide username", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default){action in
+                switch action.style{
+                case .Default:
+                    self.usernameTextField.becomeFirstResponder()
+                default:
+                    break
+                }
+                })
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+        let password = passwordTextField.text!
+        if(password.isEmpty){
+            let alert = UIAlertController(title: "Error", message: "Please provide password", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default){action in
+                switch action.style{
+                case .Default:
+                    self.becomeFirstResponder()
+                default:
+                    break
+                }
+                })
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
         self.addActivityIndicator()
         let crmAuth = CRMAuth()
         crmAuth.delegate = self
-        crmAuth.getAuthHeader(domainTextField.text!, username: usernameTextField.text!, password: passwordTextField.text!)
+        crmAuth.getAuthHeader(domain, username: username, password: password)
     }
     
     func authFinishWithSuccess(holder: AuthHolder) {
@@ -80,6 +131,19 @@ class ViewController: UIViewController,ExecuteSOAPDelegate,CRMAuthDelegate {
     func removeActivityIndicator() {
         activityIndicator.removeFromSuperview()
         activityIndicator = nil
+    }
+    
+    func matches(searchString:String, pattern : String)->Bool{
+        
+        do{
+            let regex = try NSRegularExpression(pattern: pattern, options: [.CaseInsensitive])
+            let matchCount = regex.numberOfMatchesInString(searchString, options: [], range: NSMakeRange(0, searchString.characters.count))
+            
+            return matchCount > 0
+        }catch let error as NSError {
+            print("invalid regex: \(error.localizedDescription)")
+            return false
+        }
     }
 }
 
