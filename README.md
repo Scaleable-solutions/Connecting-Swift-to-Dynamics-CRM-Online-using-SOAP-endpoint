@@ -1,6 +1,7 @@
 # SOAP-Authentication-in-Dynamics-CRM-using-Swift
 
-Apps not built on the .NET Framework, can access Microsoft Dynamics CRM business data through the SOAP and OData endpoints of the organization web service. In this tutorial we will see how to perform SOAP authentication in Microsoft Dynamics CRM using Swift. We have made a sample application which sends WhoAmIRequest and CRM responds back with the logged in username.
+
+Non .Net clients can access Microsoft Dynamics CRM business data using SOAP end point or Web API. In this tutorial we will see how to perform SOAP authentication in Microsoft Dynamics CRM from Swift. We have made a sample application which sends WhoAmIRequest and CRM responds back with the logged in username.
 ---------
 
 #Working
