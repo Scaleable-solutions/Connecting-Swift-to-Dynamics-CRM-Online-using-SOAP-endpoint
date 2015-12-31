@@ -31,16 +31,14 @@ var expire:String = ""
 
 ##CRMAuth
 
-This is the main class which does all the authentication process. We are passing the domain URL, username and password and it return four values after making a network call and parsing.
-
-Those 4 values are:
+This is the main class which does all the authentication process. We are passing CRM Online URL, username and password and it return four values, which are
 
 1.	Expire time
 2.	Key identifier
 3.	Token0
 4.	Token1
 
-1st one is to determine when the authentication token will expire and 2nd, 3rd and 4th is being used for making SOAP Header
+First value determines the expiry of authentication token. Second, third and fourth values are used for creating SOAP header.
 
 ##ExecuteSOAP
 
